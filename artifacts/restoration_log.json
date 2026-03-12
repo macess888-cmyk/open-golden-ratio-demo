@@ -1,0 +1,44 @@
+[
+  {
+    "restoration_id": "REST001",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_001",
+    "retry_sequence": 1,
+    "state_at_review": "escalated",
+    "pressure_at_review": 4,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 3,
+    "required_clean_proposals_for_watch": 3
+  },
+  {
+    "restoration_id": "REST002",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_002",
+    "retry_sequence": 2,
+    "state_at_review": "escalated",
+    "pressure_at_review": 0,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 4,
+    "required_clean_proposals_for_watch": 4
+  },
+  {
+    "restoration_id": "REST004",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_003",
+    "retry_sequence": 3,
+    "state_at_review": "contained_review_only",
+    "pressure_at_review": 1,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 5,
+    "required_clean_proposals_for_watch": 5
+  }
+]

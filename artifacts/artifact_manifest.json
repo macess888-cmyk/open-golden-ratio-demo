@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "file": "ledger.json",
+      "sha256": "0498f611e338f42ba1289fffe248cb97fe4d2b2384e2b2d90f45e9a0f197b69d"
+    },
+    {
+      "file": "watch_records.json",
+      "sha256": "5457ba999101d89fe6b9ebe38c99caaf59721203d0e5cb0b89e01f7ea7179f44"
+    },
+    {
+      "file": "restoration_log.json",
+      "sha256": "22fbae8677e02f82faa6e2bac26e66196a3075892cbcfce719a303f351af66f1"
+    },
+    {
+      "file": "run_summary.txt",
+      "sha256": "0b43e9dd9e600654c31441652f2cf07ad2035ea90ed8fb6ce17ce543490776fc"
+    }
+  ]
+}

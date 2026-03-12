@@ -1,0 +1,48 @@
+{
+  "WATCH_adversary_alpha_001": {
+    "watch_id": "WATCH_adversary_alpha_001",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 2,
+    "clean_proposals_observed": 0,
+    "current_status": "failed",
+    "failure_refs": [
+      "A031"
+    ],
+    "notes": "manual transition to demo watch 1"
+  },
+  "WATCH_adversary_alpha_002": {
+    "watch_id": "WATCH_adversary_alpha_002",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 3,
+    "clean_proposals_observed": 2,
+    "current_status": "failed",
+    "failure_refs": [
+      "A051"
+    ],
+    "notes": "Started by restoration REST001"
+  },
+  "WATCH_adversary_alpha_003": {
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 4,
+    "clean_proposals_observed": 3,
+    "current_status": "failed",
+    "failure_refs": [
+      "A064"
+    ],
+    "notes": "Started by restoration REST002"
+  },
+  "WATCH_adversary_alpha_004": {
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 5,
+    "clean_proposals_observed": 5,
+    "current_status": "passed",
+    "failure_refs": [],
+    "notes": "Started by restoration REST004"
+  }
+}

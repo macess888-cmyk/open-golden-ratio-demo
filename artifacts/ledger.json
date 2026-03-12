@@ -1,0 +1,410 @@
+[
+  {
+    "type": "proposal_committed",
+    "proposal_id": "P001",
+    "actor_id": "governance_baseline",
+    "state_at_commit": "normal",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "proposal_rejected_corridor",
+    "proposal_id": "A001",
+    "actor_id": "adversary_alpha",
+    "reason": "scope inflation"
+  },
+  {
+    "type": "proposal_rejected_corridor",
+    "proposal_id": "A002",
+    "actor_id": "adversary_alpha",
+    "reason": "scope inflation"
+  },
+  {
+    "type": "proposal_rejected_quorum",
+    "proposal_id": "A003",
+    "actor_id": "adversary_alpha",
+    "verifiers": {
+      "verifier_one": false,
+      "verifier_two": false,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "proposal_rejected_quorum",
+    "proposal_id": "A004",
+    "actor_id": "adversary_alpha",
+    "verifiers": {
+      "verifier_one": false,
+      "verifier_two": false,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_started",
+    "watch_id": "WATCH_adversary_alpha_001",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 2,
+    "notes": "manual transition to demo watch 1"
+  },
+  {
+    "type": "proposal_rejected_corridor",
+    "proposal_id": "A031",
+    "actor_id": "adversary_alpha",
+    "reason": "scope inflation"
+  },
+  {
+    "type": "watch_failed",
+    "watch_id": "WATCH_adversary_alpha_001",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A031",
+    "reason": "scope inflation",
+    "reversal_state": "escalated",
+    "failed_watch_count": 1
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A032",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "escalated",
+    "pressure_at_commit": 5,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "restoration_reviewed",
+    "restoration_id": "REST001",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_001",
+    "retry_sequence": 1,
+    "state_at_review": "escalated",
+    "pressure_at_review": 4,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 3,
+    "required_clean_proposals_for_watch": 3
+  },
+  {
+    "type": "watch_started",
+    "watch_id": "WATCH_adversary_alpha_002",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 3,
+    "notes": "Started by restoration REST001"
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A041",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_002",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A041",
+    "clean_proposals_observed": 1,
+    "required_clean_proposals": 3
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A042",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_002",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A042",
+    "clean_proposals_observed": 2,
+    "required_clean_proposals": 3
+  },
+  {
+    "type": "proposal_rejected_corridor",
+    "proposal_id": "A051",
+    "actor_id": "adversary_alpha",
+    "reason": "scope inflation"
+  },
+  {
+    "type": "watch_failed",
+    "watch_id": "WATCH_adversary_alpha_002",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A051",
+    "reason": "scope inflation",
+    "reversal_state": "escalated",
+    "failed_watch_count": 2
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A052",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "escalated",
+    "pressure_at_commit": 1,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "restoration_reviewed",
+    "restoration_id": "REST002",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_002",
+    "retry_sequence": 2,
+    "state_at_review": "escalated",
+    "pressure_at_review": 0,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 4,
+    "required_clean_proposals_for_watch": 4
+  },
+  {
+    "type": "watch_started",
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 4,
+    "notes": "Started by restoration REST002"
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A061",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A061",
+    "clean_proposals_observed": 1,
+    "required_clean_proposals": 4
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A062",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A062",
+    "clean_proposals_observed": 2,
+    "required_clean_proposals": 4
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A063",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A063",
+    "clean_proposals_observed": 3,
+    "required_clean_proposals": 4
+  },
+  {
+    "type": "proposal_rejected_corridor",
+    "proposal_id": "A064",
+    "actor_id": "adversary_alpha",
+    "reason": "scope inflation"
+  },
+  {
+    "type": "watch_failed",
+    "watch_id": "WATCH_adversary_alpha_003",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A064",
+    "reason": "scope inflation",
+    "reversal_state": "contained_review_only",
+    "failed_watch_count": 3
+  },
+  {
+    "type": "restoration_rejected_admissibility",
+    "restoration_id": "REST003",
+    "actor_id": "adversary_alpha",
+    "reason": "terminal contained-review-only state requires oversight override",
+    "requested_target_state": "normal",
+    "state_at_review": "contained_review_only",
+    "pressure_at_review": 1,
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_003",
+    "retry_sequence": 3
+  },
+  {
+    "type": "restoration_reviewed",
+    "restoration_id": "REST004",
+    "actor_id": "adversary_alpha",
+    "outcome": "approved",
+    "requested_target_state": "normal",
+    "retry_after_failed_watch": true,
+    "prior_watch_id": "WATCH_adversary_alpha_003",
+    "retry_sequence": 3,
+    "state_at_review": "contained_review_only",
+    "pressure_at_review": 1,
+    "required_reviewer_count_base": 2,
+    "required_reviewer_count_effective": 5,
+    "required_clean_proposals_for_watch": 5
+  },
+  {
+    "type": "watch_started",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal",
+    "required_clean_proposals": 5,
+    "notes": "Started by restoration REST004"
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A081",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A081",
+    "clean_proposals_observed": 1,
+    "required_clean_proposals": 5
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A082",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A082",
+    "clean_proposals_observed": 2,
+    "required_clean_proposals": 5
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A083",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A083",
+    "clean_proposals_observed": 3,
+    "required_clean_proposals": 5
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A084",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A084",
+    "clean_proposals_observed": 4,
+    "required_clean_proposals": 5
+  },
+  {
+    "type": "proposal_committed",
+    "proposal_id": "A085",
+    "actor_id": "adversary_alpha",
+    "state_at_commit": "normal_watch",
+    "pressure_at_commit": 0,
+    "verifiers": {
+      "verifier_one": true,
+      "verifier_two": true,
+      "reentry_strict_review": null
+    }
+  },
+  {
+    "type": "watch_clean_commit_observed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "proposal_id": "A085",
+    "clean_proposals_observed": 5,
+    "required_clean_proposals": 5
+  },
+  {
+    "type": "watch_passed",
+    "watch_id": "WATCH_adversary_alpha_004",
+    "actor_id": "adversary_alpha",
+    "target_state_after_watch": "normal"
+  }
+]
